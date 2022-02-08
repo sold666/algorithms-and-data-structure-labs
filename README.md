@@ -1,1 +1,1 @@
-# Laboratory work on the course algorithms and data structures at SPBPU
+# Laboratory work on the course "Algorithms and data structures" at SPBPU
