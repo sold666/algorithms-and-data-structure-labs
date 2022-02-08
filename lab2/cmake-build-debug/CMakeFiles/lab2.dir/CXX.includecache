@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/Stack.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/StackArray.hpp
+Stack.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/Stack.hpp
+exception.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/exception.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/StackList.hpp
+Stack.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/Stack.hpp
+exception.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/exception.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/exception.hpp
+exception
+-
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/main.cpp
+iostream
+-
+string
+-
+exception.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/exception.hpp
+Stack.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/Stack.hpp
+StackArray.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/StackArray.hpp
+StackList.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab2/StackList.hpp
+

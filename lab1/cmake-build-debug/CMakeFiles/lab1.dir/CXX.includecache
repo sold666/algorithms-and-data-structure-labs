@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab1/DoublyLinkedList.h
+iostream
+-
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab1/SinglyLinkedList.h
+iostream
+-
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab1/main.cpp
+SinglyLinkedList.h
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab1/SinglyLinkedList.h
+DoublyLinkedList.h
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab1/DoublyLinkedList.h
+iostream
+-
+

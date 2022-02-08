@@ -1,0 +1,102 @@
+        -:    0:Source:D:/Clion Pr/GitPr/algorithms-and-data-structure/lab7/main.cpp
+        -:    0:Graph:D:\Clion Pr\GitPr\algorithms-and-data-structure\lab7\cmake-build-debug-coverage\CMakeFiles\lab7.dir\main.cpp.gcno
+        -:    0:Data:D:\Clion Pr\GitPr\algorithms-and-data-structure\lab7\cmake-build-debug-coverage\CMakeFiles\lab7.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <iostream>
+        -:    2:#include "Sorts.hpp"
+        -:    3:#include <vector>
+        -:    4:
+        -:    5:void printArray(int* array, int size);
+        -:    6:std::vector<int>& inputAndCheckFunction();
+        -:    7:
+        1:    8:int main()
+        -:    9:{
+        1:   10:  std::cout << "Please, write the numbers you want to sort and and their quantity:" << '\n';
+        1:   10-block  0
+       1*:   11:  int* array = inputAndCheckFunction().data();
+    #####:   12:  int size = inputAndCheckFunction().size();
+        -:   13:  try
+        -:   14:  {
+    #####:   15:    std::cout << "Counting sort\n";
+    #####:   16:    printArray(array, size);
+    %%%%%:   16-block  0
+    #####:   17:    sortByCounting(array, size);
+    %%%%%:   17-block  0
+    #####:   18:    printArray(array, size);
+    %%%%%:   18-block  0
+        -:   19:  }
+    =====:   20:  catch (const std::logic_error &error)
+    $$$$$:   20-block  0
+    $$$$$:   20-block  1
+    $$$$$:   20-block  2
+        -:   21:  {
+    =====:   22:    std::cout << error.what() << '\n';
+    $$$$$:   22-block  0
+        -:   23:  }
+    #####:   24:  std::cout << "Radix sort\n";
+    %%%%%:   24-block  0
+    #####:   25:  int* arrayTwo = inputAndCheckFunction().data();
+    #####:   26:  int sizeTwo = inputAndCheckFunction().size();
+    #####:   27:  printArray(arrayTwo, sizeTwo);
+    #####:   28:  radixSort(arrayTwo, sizeTwo);
+    #####:   29:  printArray(arrayTwo, sizeTwo);
+    #####:   30:  return 0;
+        -:   31:}
+        -:   32:
+    #####:   33:void printArray(int *array, int size)
+        -:   34:{
+    #####:   35:  for (int i = 0; i < size; ++i)
+    %%%%%:   35-block  0
+    %%%%%:   35-block  1
+        -:   36:  {
+    #####:   37:    std::cout << "[ " << array[i] << " ]";
+    %%%%%:   37-block  0
+        -:   38:  }
+    #####:   39:  std::cout << '\n';
+    %%%%%:   39-block  0
+    #####:   40:}
+        -:   41:
+        1:   42:std::vector<int>& inputAndCheckFunction()
+        -:   43:{
+       1*:   44:  std::vector<int> newArray;
+        1:   44-block  0
+    $$$$$:   44-block  1
+        -:   45:  int size;
+        -:   46:  int numbers;
+        1:   47:  std::cout << "Quantity\n";
+        1:   48:  std::cin >> size;
+        1:   48-block  0
+    #####:   49:  if (size < 0)
+    %%%%%:   49-block  0
+        -:   50:  {
+    #####:   51:    throw std::invalid_argument("Size can't be less 0!");
+    %%%%%:   51-block  0
+    %%%%%:   51-block  1
+    $$$$$:   51-block  2
+        -:   52:  }
+    #####:   53:  std::cout << "Numbers\n";
+    %%%%%:   53-block  0
+    #####:   54:  for (int i = 0; i < size; ++i)
+    %%%%%:   54-block  0
+    %%%%%:   54-block  1
+    %%%%%:   54-block  2
+        -:   55:  {
+    #####:   56:    std::cin >> numbers;
+    %%%%%:   56-block  0
+    #####:   57:    newArray.push_back(numbers);
+    %%%%%:   57-block  0
+    #####:   58:    if (std::cin.fail())
+    %%%%%:   58-block  0
+    %%%%%:   58-block  1
+        -:   59:    {
+    #####:   60:      throw std::invalid_argument("You must write only integer numbers!");
+    %%%%%:   60-block  0
+    %%%%%:   60-block  1
+    $$$$$:   60-block  2
+        -:   61:    }
+        -:   62:  }
+    #####:   63:  return newArray;
+    %%%%%:   63-block  0
+    %%%%%:   63-block  1
+        -:   64:}

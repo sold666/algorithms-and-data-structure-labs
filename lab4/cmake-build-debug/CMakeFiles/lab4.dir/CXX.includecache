@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab4/BinarySearchTree.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab4/main.cpp
+iostream
+-
+BinarySearchTree.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab4/BinarySearchTree.hpp
+

@@ -1,0 +1,60 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/BinarySearchTree.hpp
+Stack.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/Stack.hpp
+Queue.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/Queue.hpp
+StackList.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/StackList.hpp
+QueueList.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/QueueList.hpp
+string
+-
+ostream
+-
+vector
+-
+algorithm
+-
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/Queue.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/QueueException.hpp
+exception
+-
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/QueueList.hpp
+iostream
+-
+Queue.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/Queue.hpp
+QueueException.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/QueueException.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/Stack.hpp
+Stack.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/Stack.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/StackException.hpp
+exception
+-
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/StackList.hpp
+Stack.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/Stack.hpp
+StackException.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/StackException.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/main.cpp
+iostream
+-
+BinarySearchTree.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab6/BinarySearchTree.hpp
+

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab7/Sorts.cpp
+iostream
+-
+Sorts.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab7/Sorts.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab7/Sorts.hpp
+iostream
+-
+

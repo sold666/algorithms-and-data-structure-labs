@@ -1,0 +1,120 @@
+        -:    0:Source:D:/Clion Pr/GitPr/algorithms-and-data-structure/lab7/Sorts.cpp
+        -:    0:Graph:D:\Clion Pr\GitPr\algorithms-and-data-structure\lab7\cmake-build-debug-coverage\CMakeFiles\lab7.dir\Sorts.cpp.gcno
+        -:    0:Data:D:\Clion Pr\GitPr\algorithms-and-data-structure\lab7\cmake-build-debug-coverage\CMakeFiles\lab7.dir\Sorts.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <iostream>
+        -:    2:#include "algorithm"
+        -:    3:
+    #####:    4:void sortByCounting (int* array, int size)
+        -:    5:{
+    #####:    6:  int maxNumber = 0;
+    #####:    7:  for (int i = 0; i < size; ++i)
+    %%%%%:    7-block  0
+    %%%%%:    7-block  1
+        -:    8:  {
+    #####:    9:    if (array[i] < 0)
+    %%%%%:    9-block  0
+        -:   10:    {
+    #####:   11:      throw std::logic_error("Numbers in array must be more than 0.");
+    %%%%%:   11-block  0
+    %%%%%:   11-block  1
+    $$$$$:   11-block  2
+        -:   12:    }
+    #####:   13:    if (array[i] > maxNumber)
+    %%%%%:   13-block  0
+        -:   14:    {
+    #####:   15:      maxNumber = array[i];
+    %%%%%:   15-block  0
+        -:   16:    }
+        -:   17:  }
+    #####:   18:  int tempArray[maxNumber + 1];
+    #####:   19:  for (int i = 0; i < maxNumber + 1; ++i)
+    %%%%%:   19-block  0
+    %%%%%:   19-block  1
+        -:   20:  {
+    #####:   21:    tempArray[i] = 0;
+    %%%%%:   21-block  0
+        -:   22:  }
+    #####:   23:  for (int i = 0; i < size; ++i)
+    %%%%%:   23-block  0
+    %%%%%:   23-block  1
+        -:   24:  {
+    #####:   25:    ++tempArray[array[i]];
+    %%%%%:   25-block  0
+        -:   26:  }
+    #####:   27:  int count = 0;
+    #####:   28:  for (int i = 0; i < maxNumber + 1; ++i)
+    %%%%%:   28-block  0
+    %%%%%:   28-block  1
+    %%%%%:   28-block  2
+        -:   29:  {
+    #####:   30:    for (int j = 0; j < tempArray[i]; ++j)
+    %%%%%:   30-block  0
+    %%%%%:   30-block  1
+        -:   31:    {
+    #####:   32:      array[count++] = i;
+    %%%%%:   32-block  0
+        -:   33:    }
+    #####:   34:  }
+    %%%%%:   34-block  0
+    #####:   35:}
+    %%%%%:   35-block  0
+        -:   36:
+    #####:   37:void radixSort (int* array, int size)
+        -:   38:{
+    #####:   39:  int discharge = 0;
+    #####:   40:  int max = array[0];
+    #####:   41:  int temp = 0;
+    #####:   42:  for (int i = 1; i < size; i++)
+    %%%%%:   42-block  0
+    %%%%%:   42-block  1
+        -:   43:  {
+    #####:   44:    if (array[i] > max)
+    %%%%%:   44-block  0
+        -:   45:    {
+    #####:   46:      max = array[i];
+    #####:   47:      temp = i;
+    %%%%%:   47-block  0
+        -:   48:    }
+        -:   49:  }
+    #####:   50:  int tempArray[size];
+    #####:   51:  int numSignificantDigit = 0;
+    #####:   52:  int maxNumber = max;
+    %%%%%:   52-block  0
+    #####:   53:  while (maxNumber)
+    %%%%%:   53-block  0
+        -:   54:  {
+        -:   55:    maxNumber % 10;
+    #####:   56:    numSignificantDigit++;
+    %%%%%:   56-block  0
+        -:   57:  }
+    #####:   58:  while (numSignificantDigit > 0)
+    %%%%%:   58-block  0
+        -:   59:  {
+    #####:   60:    int bucket[10] = {0};
+    #####:   61:    for (int i = 0; i < size; ++i)
+    %%%%%:   61-block  0
+    %%%%%:   61-block  1
+    #####:   62:      bucket[(array[i] / numSignificantDigit) % 10]++;
+    %%%%%:   62-block  0
+    #####:   63:    for (int i = 0; i < 10; ++i)
+    %%%%%:   63-block  0
+    %%%%%:   63-block  1
+    #####:   64:      bucket[i] += bucket[i - 1];
+    %%%%%:   64-block  0
+    #####:   65:    for (int i = size - 1; i >= 0; --i)
+    %%%%%:   65-block  0
+    %%%%%:   65-block  1
+    #####:   66:      tempArray[--bucket[(array[i] / numSignificantDigit) % 10]] = array[i];
+    %%%%%:   66-block  0
+    #####:   67:    for (int i = 0; i < size; ++i)
+    %%%%%:   67-block  0
+    %%%%%:   67-block  1
+    #####:   68:      array[i] = tempArray[i];
+    %%%%%:   68-block  0
+    #####:   69:    numSignificantDigit *= 10;
+    %%%%%:   69-block  0
+    #####:   70:  }
+    %%%%%:   70-block  0
+    #####:   71:}

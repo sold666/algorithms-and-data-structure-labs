@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/Queue.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/QueueArray.hpp
+iostream
+-
+Queue.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/Queue.hpp
+exception.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/exception.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/QueueList.hpp
+iostream
+-
+Queue.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/Queue.hpp
+exception.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/exception.hpp
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/exception.hpp
+exception
+-
+
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/main.cpp
+iostream
+-
+Queue.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/Queue.hpp
+QueueArray.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/QueueArray.hpp
+QueueList.hpp
+D:/Clion Pr/GitPr/algorithms-and-data-structure/lab5/QueueList.hpp
+
